@@ -9,6 +9,7 @@ Sitio corporativo y presentación académica del Proyecto Final Aplicado de Micr
 - Planes y precios propuestos.
 - Diagnóstico interactivo con recomendación simulada.
 - Proceso de atención al cliente.
+- Caso aplicado de EcoWash con panel demostrativo.
 - Resumen académico y descarga del documento completo.
 - Espacio preparado para el video de exposición.
 
@@ -23,6 +24,7 @@ dist/
 ├── assets/
 │   └── Proyecto-Final-NovaTech-Solutions.docx
 ├── app.js
+├── caso-ecowash.html
 ├── index.html
 └── styles.css
 ```

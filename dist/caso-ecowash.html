@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Caso académico simulado de EcoWash: demostración del proceso de diagnóstico, implementación y seguimiento de NovaTech Solutions.">
+  <meta name="theme-color" content="#07141e">
+  <title>Caso EcoWash | NovaTech Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="case-dashboard-body">
+  <a class="skip-link" href="#panel-principal">Saltar al panel</a>
+
+  <header class="case-topbar">
+    <a class="brand" href="index.html" aria-label="NovaTech Solutions, volver al sitio principal">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M10 36V12h7l14 15V12h7v24h-7L17 21v15z"/>
+        <circle cx="39" cy="9" r="4"/>
+      </svg>
+      <span>NovaTech<small>Solutions</small></span>
+    </a>
+    <div class="case-topbar-center"><i></i> Caso académico simulado</div>
+    <a class="case-back-link" href="index.html#caso-aplicado">← Volver al proyecto</a>
+  </header>
+
+  <div class="case-app-shell">
+    <aside class="case-sidebar" aria-label="Navegación del caso EcoWash">
+      <div class="case-client-card">
+        <span class="case-client-logo">EW</span>
+        <div><strong>EcoWash</strong><small>Lavado de autos</small></div>
+      </div>
+
+      <nav class="case-tabs" role="tablist" aria-label="Secciones del caso">
+        <button class="active" type="button" role="tab" aria-selected="true" data-case-tab="resumen"><span>⌂</span> Resumen</button>
+        <button type="button" role="tab" aria-selected="false" data-case-tab="diagnostico"><span>⌕</span> Diagnóstico</button>
+        <button type="button" role="tab" aria-selected="false" data-case-tab="plan"><span>◇</span> Plan de acción</button>
+        <button type="button" role="tab" aria-selected="false" data-case-tab="reporte"><span>▤</span> Reporte</button>
+        <button type="button" role="tab" aria-selected="false" data-case-tab="seguimiento"><span>↻</span> Seguimiento</button>
+      </nav>
+
+      <div class="case-sidebar-note">
+        <span>i</span>
+        <p>Los datos y resultados de este panel son ficticios y se utilizan únicamente para demostrar el servicio.</p>
+      </div>
+    </aside>
+
+    <main class="case-dashboard-main" id="panel-principal">
+      <section class="case-panel active" role="tabpanel" data-case-panel="resumen">
+        <div class="case-page-heading">
+          <div>
+            <p class="case-overline">Panel del cliente · Resumen</p>
+            <h1>Buenos días, EcoWash.</h1>
+            <p>Este es el estado simulado de tu servicio con NovaTech Solutions.</p>
+          </div>
+          <span class="case-status-pill"><i></i> Implementación completada</span>
+        </div>
+
+        <div class="case-metric-grid">
+          <article class="case-metric-card accent">
+            <span>Avance del servicio</span>
+            <strong>75%</strong>
+            <div class="case-progress"><i style="--case-progress:75%"></i></div>
+            <small>Seguimiento pendiente</small>
+          </article>
+          <article class="case-metric-card">
+            <span>Hallazgos</span>
+            <strong>4</strong>
+            <small>2 altos · 2 medios</small>
+          </article>
+          <article class="case-metric-card">
+            <span>Acciones aplicadas</span>
+            <strong>3</strong>
+            <small>Autorizadas y comprobadas</small>
+          </article>
+          <article class="case-metric-card">
+            <span>Próxima revisión</span>
+            <strong class="metric-text">30 días</strong>
+            <small>Seguimiento recomendado</small>
+          </article>
+        </div>
+
+        <div class="case-dashboard-grid">
+          <article class="case-dashboard-card">
+            <div class="case-card-heading"><div><small>PLAN CONTRATADO</small><h2>Protección y Orden</h2></div><strong>Q300</strong></div>
+            <ul class="case-check-list">
+              <li class="done"><span>✓</span><div><strong>Diagnóstico tecnológico</strong><small>Revisión inicial completada</small></div></li>
+              <li class="done"><span>✓</span><div><strong>Seguridad básica</strong><small>Accesos y doble verificación revisados</small></div></li>
+              <li class="done"><span>✓</span><div><strong>Respaldo de información</strong><small>Copia separada y recuperación probada</small></div></li>
+              <li class="pending"><span>○</span><div><strong>Seguimiento</strong><small>Programado para confirmar continuidad</small></div></li>
+            </ul>
+          </article>
+
+          <article class="case-dashboard-card">
+            <div class="case-card-heading"><div><small>PRIORIDADES</small><h2>Hallazgos principales</h2></div><button class="case-inline-button" type="button" data-open-case-tab="diagnostico">Ver todos →</button></div>
+            <div class="case-finding-list">
+              <div><span class="case-priority priority-high">Alta</span><div><strong>Accesos compartidos</strong><small>Las cuentas no distinguen responsables.</small></div></div>
+              <div><span class="case-priority priority-high">Alta</span><div><strong>Respaldo sin comprobar</strong><small>No existía evidencia de recuperación.</small></div></div>
+              <div><span class="case-priority priority-medium">Media</span><div><strong>Canales desactualizados</strong><small>Horarios distintos en Instagram y WhatsApp.</small></div></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="case-academic-banner"><span>SIMULACIÓN</span><p>EcoWash es un negocio ficticio creado para mostrar el recorrido completo de NovaTech Solutions. Ninguna acción fue realizada sobre una empresa real.</p></div>
+      </section>
+
+      <section class="case-panel" role="tabpanel" data-case-panel="diagnostico" hidden>
+        <div class="case-page-heading">
+          <div><p class="case-overline">Evaluación inicial</p><h1>Diagnóstico tecnológico</h1><p>Información declarada y hallazgos simulados después de una revisión autorizada.</p></div>
+          <span class="case-status-pill complete"><i></i> Completado</span>
+        </div>
+
+        <div class="diagnostic-summary-row">
+          <div><small>Negocio</small><strong>Lavado de autos</strong></div>
+          <div><small>Equipo</small><strong>5 colaboradores</strong></div>
+          <div><small>Herramientas</small><strong>WhatsApp, Instagram y hojas de cálculo</strong></div>
+        </div>
+
+        <div class="case-table-card">
+          <div class="case-table-head"><span>Área revisada</span><span>Estado</span><span>Prioridad</span><span>Observación</span></div>
+          <div class="case-table-row"><strong>Cuentas y accesos</strong><span class="state-partial">En parte</span><span class="case-priority priority-high">Alta</span><p>Dos colaboradores utilizan el mismo acceso de atención.</p></div>
+          <div class="case-table-row"><strong>Contraseñas y verificación</strong><span class="state-no">No</span><span class="case-priority priority-high">Alta</span><p>No se confirmó doble verificación en la cuenta principal.</p></div>
+          <div class="case-table-row"><strong>Respaldo de información</strong><span class="state-partial">En parte</span><span class="case-priority priority-high">Alta</span><p>La hoja de servicios se guarda en un único equipo y no se había probado su recuperación.</p></div>
+          <div class="case-table-row"><strong>Presencia digital</strong><span class="state-partial">En parte</span><span class="case-priority priority-medium">Media</span><p>Los horarios publicados no coinciden entre los canales del negocio.</p></div>
+          <div class="case-table-row"><strong>Dispositivos</strong><span class="state-yes">Sí</span><span class="case-priority priority-low">Baja</span><p>Los equipos revisados cuentan con bloqueo y actualizaciones activas.</p></div>
+        </div>
+        <p class="case-method-note"><strong>Criterio responsable:</strong> una respuesta “No sé” se conserva como pendiente de verificación; nunca se transforma automáticamente en una falla.</p>
+      </section>
+
+      <section class="case-panel" role="tabpanel" data-case-panel="plan" hidden>
+        <div class="case-page-heading">
+          <div><p class="case-overline">Propuesta autorizada</p><h1>Plan de acción</h1><p>Acciones simuladas, delimitadas y relacionadas con los hallazgos del diagnóstico.</p></div>
+          <span class="case-status-pill"><i></i> 3 de 3 aplicadas</span>
+        </div>
+
+        <div class="action-plan-list">
+          <article>
+            <div class="action-number">01</div>
+            <div><span class="case-priority priority-high">Prioridad alta</span><h2>Separar accesos y activar doble verificación</h2><p>Definir responsables, retirar el uso compartido de la cuenta principal y activar un segundo factor disponible.</p><div class="action-evidence"><span>✓</span> Evidencia simulada: acceso individual comprobado</div></div>
+            <span class="action-done">Completada</span>
+          </article>
+          <article>
+            <div class="action-number">02</div>
+            <div><span class="case-priority priority-high">Prioridad alta</span><h2>Crear un respaldo separado</h2><p>Guardar la hoja de servicios fuera del equipo principal y definir una frecuencia de copia semanal.</p><div class="action-evidence"><span>✓</span> Evidencia simulada: copia separada creada</div></div>
+            <span class="action-done">Completada</span>
+          </article>
+          <article>
+            <div class="action-number">03</div>
+            <div><span class="case-priority priority-high">Prioridad alta</span><h2>Comprobar la recuperación del respaldo</h2><p>Recuperar un archivo autorizado para confirmar que la copia separada puede utilizarse cuando sea necesaria.</p><div class="action-evidence"><span>✓</span> Evidencia simulada: archivo de prueba recuperado</div></div>
+            <span class="action-done">Completada</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-panel" role="tabpanel" data-case-panel="reporte" hidden>
+        <div class="case-page-heading no-print">
+          <div><p class="case-overline">Entregable del servicio</p><h1>Reporte de evaluación</h1><p>Resumen de lo declarado, comprobado y recomendado para EcoWash.</p></div>
+          <button class="button button-primary" type="button" data-print-case>Imprimir reporte <span>↗</span></button>
+        </div>
+
+        <article class="client-report">
+          <header><div><small>NOVATECH SOLUTIONS</small><h2>Reporte técnico · EcoWash</h2></div><span>CASO SIMULADO</span></header>
+          <div class="report-intro"><p><strong>Objetivo.</strong> Revisar accesos, respaldos y canales digitales básicos del negocio, dentro del alcance autorizado.</p><p><strong>Resultado general.</strong> Se identificaron dos prioridades altas relacionadas con control de acceso y continuidad de la información.</p></div>
+          <div class="report-section"><h3>Hallazgos confirmados</h3><ol><li>Uso compartido de una cuenta para atención al cliente.</li><li>Ausencia de doble verificación confirmada en la cuenta principal.</li><li>Archivos operativos almacenados en un único equipo.</li><li>Horarios distintos entre los canales digitales.</li></ol></div>
+          <div class="report-section"><h3>Acciones realizadas en la simulación</h3><ol><li>Separación de los accesos utilizados para atención.</li><li>Activación de doble verificación en la cuenta principal.</li><li>Configuración de una copia separada con prueba de recuperación.</li></ol></div>
+          <div class="report-section"><h3>Recomendación de seguimiento</h3><p>Revisar accesos y recuperación del respaldo después de 30 días. La actualización de horarios digitales queda como recomendación pendiente y debe cotizarse o autorizarse por separado.</p></div>
+          <footer><span>Documento demostrativo · Proyecto Final Aplicado</span><span>Microeconomía · 2026</span></footer>
+        </article>
+      </section>
+
+      <section class="case-panel" role="tabpanel" data-case-panel="seguimiento" hidden>
+        <div class="case-page-heading">
+          <div><p class="case-overline">Continuidad del servicio</p><h1>Seguimiento</h1><p>La implementación termina con comprobación, explicación y una revisión posterior.</p></div>
+          <span class="case-status-pill waiting"><i></i> Próxima revisión pendiente</span>
+        </div>
+
+        <div class="followup-layout">
+          <article class="case-dashboard-card">
+            <div class="case-card-heading"><div><small>CRONOGRAMA</small><h2>Recorrido del servicio</h2></div></div>
+            <ol class="case-timeline">
+              <li class="complete"><span>✓</span><div><strong>Solicitud recibida</strong><small>Información básica del negocio registrada.</small></div></li>
+              <li class="complete"><span>✓</span><div><strong>Diagnóstico completado</strong><small>Hallazgos separados por prioridad.</small></div></li>
+              <li class="complete"><span>✓</span><div><strong>Propuesta autorizada</strong><small>Plan Protección y Orden seleccionado.</small></div></li>
+              <li class="complete"><span>✓</span><div><strong>Implementación comprobada</strong><small>Acciones y evidencia registradas.</small></div></li>
+              <li class="current"><span>5</span><div><strong>Seguimiento a 30 días</strong><small>Confirmar accesos y recuperación del respaldo.</small></div></li>
+            </ol>
+          </article>
+
+          <article class="case-dashboard-card followup-card">
+            <span class="followup-icon">↻</span>
+            <small>PRÓXIMO PASO</small>
+            <h2>Revisión de continuidad</h2>
+            <p>NovaTech comprobaría que los accesos siguen asignados correctamente y realizaría una nueva recuperación de prueba.</p>
+            <div class="followup-details"><div><span>Modalidad</span><strong>Remota</strong></div><div><span>Duración estimada</span><strong>30 minutos</strong></div></div>
+            <p class="followup-disclaimer">Actividad ilustrativa. No corresponde a una cita real.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="case-dashboard-footer">
+    <span>NovaTech Solutions · Proyecto académico</span>
+    <a href="index.html">Volver al sitio principal</a>
+  </footer>
+</body>
+</html>

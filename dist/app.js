@@ -133,3 +133,31 @@ contactForm?.addEventListener('submit', (event) => {
   contactStatus.textContent = `Gracias, ${name}. Esta es una demostración: tu solicitud no fue enviada a un servidor.`;
   contactForm.reset();
 });
+
+const caseTabs = [...document.querySelectorAll('[data-case-tab]')];
+const casePanels = [...document.querySelectorAll('[data-case-panel]')];
+
+function activateCaseTab(name) {
+  if (!caseTabs.length || !casePanels.length) return;
+  caseTabs.forEach((tab) => {
+    const selected = tab.dataset.caseTab === name;
+    tab.classList.toggle('active', selected);
+    tab.setAttribute('aria-selected', String(selected));
+  });
+  casePanels.forEach((panel) => {
+    const selected = panel.dataset.casePanel === name;
+    panel.classList.toggle('active', selected);
+    panel.hidden = !selected;
+  });
+  document.querySelector('#panel-principal')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+caseTabs.forEach((tab) => {
+  tab.addEventListener('click', () => activateCaseTab(tab.dataset.caseTab));
+});
+
+document.querySelectorAll('[data-open-case-tab]').forEach((button) => {
+  button.addEventListener('click', () => activateCaseTab(button.dataset.openCaseTab));
+});
+
+document.querySelector('[data-print-case]')?.addEventListener('click', () => window.print());
