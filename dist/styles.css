@@ -377,6 +377,12 @@ input:focus, select:focus, textarea:focus { border-color: #519f98; box-shadow: 0
 .diagnostic-summary-row small, .diagnostic-summary-row strong { display: block; }
 .diagnostic-summary-row small { color: var(--cyan); font-size: 7px; letter-spacing: 1px; text-transform: uppercase; }
 .diagnostic-summary-row strong { margin-top: 7px; font-size: 11px; }
+.case-status-legend { display: flex; flex-wrap: wrap; gap: 18px; margin: 0 0 12px; padding: 11px 15px; color: rgba(255,255,255,.46); background: rgba(255,255,255,.025); border: 1px solid var(--line-dark); border-radius: 9px; font-size: 8px; }
+.case-status-legend span { display: flex; align-items: center; gap: 7px; }
+.case-status-legend i { width: 7px; height: 7px; border-radius: 50%; }
+.legend-risk { background: #ff7d69; }
+.legend-review { background: #ffc85a; }
+.legend-good { background: var(--lime); }
 .case-table-card { overflow: hidden; border: 1px solid var(--line-dark); border-radius: 12px; }
 .case-table-head, .case-table-row { display: grid; grid-template-columns: 1.1fr .6fr .55fr 1.75fr; align-items: center; gap: 18px; }
 .case-table-head { padding: 12px 18px; color: rgba(255,255,255,.35); background: rgba(255,255,255,.035); font-size: 7px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
@@ -384,9 +390,9 @@ input:focus, select:focus, textarea:focus { border-color: #519f98; box-shadow: 0
 .case-table-row > strong { font-size: 10px; }
 .case-table-row > p { margin: 0; color: rgba(255,255,255,.5); font-size: 9px; line-height: 1.45; }
 .case-table-row > span:not(.case-priority) { font-size: 9px; font-weight: 800; }
-.state-yes { color: var(--lime); }
-.state-no { color: #ff9a87; }
-.state-partial { color: #ffd173; }
+.state-good { color: var(--lime); }
+.state-risk { color: #ff9a87; }
+.state-review { color: #ffd173; }
 .case-method-note { padding: 14px 17px; margin-top: 12px; color: rgba(255,255,255,.48); background: rgba(107,228,226,.04); border-left: 2px solid var(--cyan); font-size: 9px; }
 .action-plan-list { display: grid; gap: 10px; }
 .action-plan-list article { display: grid; grid-template-columns: 54px 1fr auto; gap: 22px; align-items: center; padding: 24px; background: rgba(255,255,255,.035); border: 1px solid var(--line-dark); border-radius: 13px; }

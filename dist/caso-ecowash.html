@@ -116,15 +116,21 @@
           <div><small>Herramientas</small><strong>WhatsApp, Instagram y hojas de cálculo</strong></div>
         </div>
 
-        <div class="case-table-card">
-          <div class="case-table-head"><span>Área revisada</span><span>Estado</span><span>Prioridad</span><span>Observación</span></div>
-          <div class="case-table-row"><strong>Cuentas y accesos</strong><span class="state-partial">En parte</span><span class="case-priority priority-high">Alta</span><p>Dos colaboradores utilizan el mismo acceso de atención.</p></div>
-          <div class="case-table-row"><strong>Contraseñas y verificación</strong><span class="state-no">No</span><span class="case-priority priority-high">Alta</span><p>No se confirmó doble verificación en la cuenta principal.</p></div>
-          <div class="case-table-row"><strong>Respaldo de información</strong><span class="state-partial">En parte</span><span class="case-priority priority-high">Alta</span><p>La hoja de servicios se guarda en un único equipo y no se había probado su recuperación.</p></div>
-          <div class="case-table-row"><strong>Presencia digital</strong><span class="state-partial">En parte</span><span class="case-priority priority-medium">Media</span><p>Los horarios publicados no coinciden entre los canales del negocio.</p></div>
-          <div class="case-table-row"><strong>Dispositivos</strong><span class="state-yes">Sí</span><span class="case-priority priority-low">Baja</span><p>Los equipos revisados cuentan con bloqueo y actualizaciones activas.</p></div>
+        <div class="case-status-legend" aria-label="Significado de los estados">
+          <span><i class="legend-risk"></i> Requiere atención</span>
+          <span><i class="legend-review"></i> Necesita revisión</span>
+          <span><i class="legend-good"></i> Configuración confirmada</span>
         </div>
-        <p class="case-method-note"><strong>Criterio responsable:</strong> una respuesta “No sé” se conserva como pendiente de verificación; nunca se transforma automáticamente en una falla.</p>
+
+        <div class="case-table-card">
+          <div class="case-table-head"><span>Área revisada</span><span>Resultado</span><span>Prioridad</span><span>Observación</span></div>
+          <div class="case-table-row"><strong>Cuentas y accesos</strong><span class="state-risk">Acceso compartido</span><span class="case-priority priority-high">Alta</span><p>Dos colaboradores utilizan el mismo acceso de atención.</p></div>
+          <div class="case-table-row"><strong>Contraseñas y verificación</strong><span class="state-risk">Sin verificación</span><span class="case-priority priority-high">Alta</span><p>No se confirmó doble verificación en la cuenta principal.</p></div>
+          <div class="case-table-row"><strong>Respaldo de información</strong><span class="state-review">Sin comprobar</span><span class="case-priority priority-high">Alta</span><p>La hoja de servicios se guarda en un único equipo y no se había probado su recuperación.</p></div>
+          <div class="case-table-row"><strong>Presencia digital</strong><span class="state-review">Datos inconsistentes</span><span class="case-priority priority-medium">Media</span><p>Los horarios publicados no coinciden entre los canales del negocio.</p></div>
+          <div class="case-table-row"><strong>Dispositivos</strong><span class="state-good">Configuración confirmada</span><span class="case-priority priority-low">Baja</span><p>Los equipos revisados cuentan con bloqueo y actualizaciones activas.</p></div>
+        </div>
+        <p class="case-method-note"><strong>Criterio responsable:</strong> los resultados describen lo que se pudo comprobar. Cuando no existe evidencia suficiente, se utiliza “Pendiente de verificar” en lugar de asumir una falla.</p>
       </section>
 
       <section class="case-panel" role="tabpanel" data-case-panel="plan" hidden>
