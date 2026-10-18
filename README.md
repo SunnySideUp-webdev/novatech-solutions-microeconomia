@@ -11,7 +11,7 @@ Sitio corporativo y presentación académica del Proyecto Final Aplicado de Micr
 - Proceso de atención al cliente.
 - Caso aplicado de EcoWash con panel demostrativo.
 - Resumen académico y descarga del documento completo.
-- Espacio preparado para el video de exposición.
+- Video de exposición integrado desde YouTube.
 
 ## Ver el sitio
 
@@ -31,6 +31,6 @@ dist/
 
 ## Estado
 
-Primera versión funcional. El video grupal se integrará cuando esté disponible y el contenido se revisará con el equipo antes de la entrega final.
+Versión funcional con el proyecto, el caso aplicado y el video grupal integrados.
 
 > Este sitio es una demostración académica. Los precios, costos y escenarios económicos no representan ventas realizadas.
