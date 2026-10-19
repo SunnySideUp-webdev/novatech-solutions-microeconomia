@@ -22,7 +22,7 @@ Abre `dist/index.html` en un navegador. El proyecto utiliza HTML, CSS y JavaScri
 ```text
 dist/
 ├── assets/
-│   └── Proyecto-Final-NovaTech-Solutions.docx
+│   └── Proyecto-Final-NovaTech-Solutions.pdf
 ├── app.js
 ├── caso-ecowash.html
 ├── index.html
